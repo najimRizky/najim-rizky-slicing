@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --body-bg: #111111;
   --text-color: #ffffff;
+  --gradient-1: linear-gradient(91deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
 }
+
 
 * {
   font-family: 'Unbounded', sans-serif;
@@ -19,7 +21,56 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   font-weight: 300;
+  line-height: 1.3;
+}
+
+/* Global */
+.text-gradient {
+  background-image: var(--gradient-1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1, h2 {
+  font-size: 3.375rem;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+}
+/* End Global */
+
+/* Hero - Section */
+#hero-section {
+  background: url('./../images/bg_section-hero.jpg') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+#hero-section .title .desc {
+  transform: translate(-100px, -10px);
+}
+
+#hero-section .year {
+  font-size: 1.6875rem;
+}
+
+#hero-section .greeting {
+  font-size: 0.75rem;
+}
+
+#hero-section .details {
+  max-width: 24ch;
+  font-size: 0.875rem;
 }
