@@ -87,6 +87,11 @@ p {
   z-index: -1;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Hero - Section */
 #hero-section {
   background: url('./../images/bg_section-hero.jpg') no-repeat center center;
