@@ -7,8 +7,7 @@
   <title>Najim Rizky</title>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Local CSS -->
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -300,8 +299,126 @@
   <!-- End Get Started - Section -->
 
   <!-- What We Do - Section -->
-  <section>
-    <h1>What We Do Section</h1>
+  <section class="container mt-5" id="what_we_do-section">
+    <h2 class="text-gradient mb-5">
+      Projects for our <br> clients
+    </h2>
+    <div id="carousel-what_we_do" class="carousel slide position-relative" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-0">
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Technology <br> startup site</h3>
+                <p class="font-inter desc">
+                  We partnered with a technology startup to create a new website that would showcase their innovative
+                  product and attract investors.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Food store <br> identity</h3>
+                <p class="font-inter desc">
+                  We worked with a local health food store to create a new brand identity that was both modern and
+                  eco-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Technology <br> startup site</h3>
+                <p class="font-inter desc">
+                  We partnered with a technology startup to create a new website that would showcase their innovative
+                  product and attract investors.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Food store <br> identity</h3>
+                <p class="font-inter desc">
+                  We worked with a local health food store to create a new brand identity that was both modern and
+                  eco-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Technology <br> startup site</h3>
+                <p class="font-inter desc">
+                  We partnered with a technology startup to create a new website that would showcase their innovative
+                  product and attract investors.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <img class="position-absolute -z-1 w-100 h-100 object-fit-cover" src="./images/bg_carrousel_01.jpg"
+                alt="bg_carrousel">
+              <div class="p-5">
+                <p class="text-gradient text-extra-small font-inter mb-5">
+                  branding
+                </p>
+                <h3 class="mb-4">Food store <br> identity</h3>
+                <p class="font-inter desc">
+                  We worked with a local health food store to create a new brand identity that was both modern and
+                  eco-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute bottom-0 end-0 carousel-control">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-what_we_do" data-bs-slide="prev">
+          <img src="./images/ico_arrow-left.png" alt="arrow-left">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-what_we_do" data-bs-slide="next">
+          <img src="./images/ico_arrow-right.png" alt="arrow-right">
+        </button>
+      </div>
+      <div class="carousel-indicators gap-2">
+        <button type="button" data-bs-target="#carousel-what_we_do" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-what_we_do" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-what_we_do" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+    </div>
   </section>
   <!-- End What We Do - Section -->
 
@@ -312,12 +429,9 @@
   <!-- End Footer -->
 
   <!-- Bootstrap -->
-  <script src="https://cdcn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- Jqery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
   <!-- Local script -->
   <script src="./js/index.js"></script>
 </body>
