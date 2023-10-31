@@ -58,6 +58,10 @@ p {
   font-size: 0.875rem;
 }
 
+.text-extra-small {
+  font-size: 0.75rem;
+}
+
 @media (max-width: 992px) {
 
   h1,
@@ -67,7 +71,6 @@ p {
 }
 
 @media (max-width: 768px) {
-
   h1,
   h2 {
     font-size: 1.6875rem;
@@ -160,4 +163,15 @@ p {
 
 #expertise-section .table-objective .col-4:nth-child(3) .table-objective_header {
   border-right: 2px solid white;
+}
+/* End Expertise - Section */
+
+/* Get Started - Section */
+#get_started-section .bg-panel {
+  background-image: url("./../images/bg_section-get-started.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 37rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
