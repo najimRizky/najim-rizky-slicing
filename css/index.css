@@ -37,28 +37,28 @@ p {
   line-height: 1.3;
 }
 
-.text-gradient,
-.wavy-gradient {
+.textGradient,
+.wavyGradient {
   background-image: var(--gradient-1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.wavy-gradient {
+.wavyGradient {
   position: absolute;
   letter-spacing: -10px;
 }
 
 @media (max-width: 992px) {
-  .wavy-gradient {
+  .wavyGradient {
     letter-spacing: -5px;
     font-size: 2.25rem;
   }
 }
 
 @media (max-width: 768px) {
-  .wavy-gradient {
+  .wavyGradient {
     letter-spacing: -5px;
     font-size: 1.6875rem;
   }
@@ -81,7 +81,7 @@ p {
   font-weight: normal;
 }
 
-.text-extra-small {
+.textExtraSmall {
   font-size: 0.75rem;
 }
 
@@ -119,77 +119,77 @@ a {
 }
 
 /* Hero - Section */
-#hero-section {
+#sectionHero {
   background: url('./../images/bg_section-hero.jpg') no-repeat center center;
   background-size: cover;
   background-position: right;
   min-height: 55rem;
 }
 
-#hero-section .wavy-gradient.your {
+#sectionHero .wavyGradient.your {
   right: 0;
   top: -1rem;
 }
 
-#hero-section .title .desc {
+#sectionHero .title .desc {
   transform: translate(-100px, -10px);
   font-size: 1rem;
   color: white;
   font-family: var(--unbounded);
 }
 
-#hero-section .year {
+#sectionHero .year {
   font-size: 1.6875rem;
   font-family: var(--unbounded);
   font-weight: 300;
 }
 
-#hero-section .greeting {
+#sectionHero .greeting {
   font-size: 0.75rem;
 }
 
-#hero-section .details {
+#sectionHero .details {
   max-width: 24ch;
 }
 
-#hero-section .section-list {
+#sectionHero .sectionList {
   background: rgba(0, 0, 0, 0.7);
   margin-top: 5rem;
   padding: 4rem 0;
 
 }
 
-#hero-section .section-list .row {
+#sectionHero .sectionList .row {
   --bs-gutter-x: 5.5rem;
 }
 
-#hero-section .section-list .section-list_item {
+#sectionHero .sectionList .sectionListItem {
   border-bottom: var(--border);
   font-family: var(--unbounded) !important;
 }
 
 @media (max-width: 768px) {
-  #hero-section {
+  #sectionHero {
     min-height: 54rem;
   }
 
-  #hero-section .section-list .row {
+  #sectionHero .sectionList .row {
     --bs-gutter-x: 1rem;
   }
 
-  #hero-section .title .desc {
+  #sectionHero .title .desc {
     margin-top: 0.5rem;
     transform: translate(0, 0);
     width: 100%;
     font-size: 0.75rem;
   }
 
-  #hero-section .section-list {
+  #sectionHero .sectionList {
     padding: 2.5rem 0;
     margin-top: 3rem;
   }
 
-  #hero-section .year {
+  #sectionHero .year {
     font-size: 2rem;
   }
 }
@@ -198,60 +198,60 @@ a {
 /*  End Hero - Section */
 
 /* About Us - Section */
-#about_us-section {
+#sectionAboutUs {
   margin-top: 6rem;
 }
 
-#about_us-section h2 {
+#sectionAboutUs h2 {
   max-width: 14ch;
 }
 
-#about_us-section .details,
-#about_us-section .cards {
+#sectionAboutUs .details,
+#sectionAboutUs .cards {
   margin-bottom: 8rem;
 }
 
-#about_us-section .wavy-gradient {
+#sectionAboutUs .wavyGradient {
   bottom: -3.5rem;
 }
 
-#about_us-section .sphere {
+#sectionAboutUs .sphere {
   background: #202020;
 }
 
-#about_us-section .card-item {
+#sectionAboutUs .cardItem {
   min-height: 18.5rem;
 }
 
-#about_us-section .card-item img {
+#sectionAboutUs .cardItem img {
   z-index: -1;
 }
 
-#about_us-section .card-item_content h3 {
+#sectionAboutUs .cardItemContent h3 {
   font-size: 2.5rem;
 }
 
-#about_us-section .card-item_content p {
+#sectionAboutUs .cardItemContent p {
   max-width: 30ch;
 }
 
 @media (max-width: 992px) {
-  #about_us-section .wavy-gradient {
+  #sectionAboutUs .wavyGradient {
     bottom: -2.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  #about_us-section {
+  #sectionAboutUs {
     margin-top: 4rem;
   }
 
-  #about_us-section .details,
-  #about_us-section .cards {
+  #sectionAboutUs .details,
+  #sectionAboutUs .cards {
     margin-bottom: 4rem;
   }
 
-  #about_us-section .wavy-gradient {
+  #sectionAboutUs .wavyGradient {
     bottom: -2rem;
   }
 }
@@ -259,68 +259,68 @@ a {
 /* End About Us - Section */
 
 /* Expertise - Section */
-#expertise-section {
+#sectionExpertise {
   margin-bottom: 7rem;
 }
 
-#expertise-section h2 {
+#sectionExpertise h2 {
   max-width: 18ch;
 }
 
-#expertise-section .wavy-gradient.achive {
+#sectionExpertise .wavyGradient.achive {
   right: 9.5rem;
   top: -1rem;
 }
 
-#expertise-section .wavy-gradient.objectives {
+#sectionExpertise .wavyGradient.objectives {
   left: 0;
   bottom: -2.25rem;
 }
 
 
 
-#expertise-section p {
+#sectionExpertise p {
   font-family: var(--inter);
 }
 
-#expertise-section .nav-tabs .nav-item {
+#sectionExpertise .nav-tabs .nav-item {
   border: var(--border);
   font-size: 1.875rem;
 }
 
 @media (max-width: 992px) {
-  #expertise-section .wavy-gradient.achive {
+  #sectionExpertise .wavyGradient.achive {
     right: 7rem;
     top: -1rem;
   }
 
-  #expertise-section .nav-tabs .nav-item {
+  #sectionExpertise .nav-tabs .nav-item {
     font-size: 1.25rem;
   }
 }
 
 @media (max-width: 768px) {
-  #expertise-section .wavy-gradient.achive {
+  #sectionExpertise .wavyGradient.achive {
     right: 4.75rem;
     top: -1rem;
   }
 
-  #expertise-section {
+  #sectionExpertise {
     margin-bottom: 5rem;
   }
 }
 
 @media (max-width: 576px) {
-  #expertise-section .nav-tabs .nav-item {
+  #sectionExpertise .nav-tabs .nav-item {
     font-size: 1rem;
   }
 }
 
-#expertise-section .nav-tabs .nav-item:not(:has(.active)) div {
+#sectionExpertise .nav-tabs .nav-item:not(:has(.active)) div {
   opacity: 0.5;
 }
 
-#expertise-section .tab-content {
+#sectionExpertise .tab-content {
   border-top: none;
   border-bottom: var(--border);
   border-left: var(--border);
@@ -330,20 +330,20 @@ a {
 /* End Expertise - Section */
 
 /* Get Started - Section */
-#get_started-section .wavy-gradient.experience {
+#sectionGetStarted .wavyGradient.experience {
   bottom: -2rem;
 }
 
-#get_started-section .desc {
+#sectionGetStarted .desc {
   max-width: 28ch;
 }
 
-#get_started-section .wavy-gradient.and {
+#sectionGetStarted .wavyGradient.and {
   left: 19.25rem;
   top: -1rem;
 }
 
-#get_started-section .bg-panel {
+#sectionGetStarted .bgPanel {
   background-image: url("./../images/bg_section-get-started.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,32 +353,32 @@ a {
   padding-bottom: 4rem;
 }
 
-#get_started-section .plain-panel {
+#sectionGetStarted .plainPanel {
   margin: 6rem 0;
 }
 
-#get_started-section .details {
+#sectionGetStarted .details {
   margin-top: 16rem;
 }
 
 @media (max-width: 992px) {
-  #get_started-section .wavy-gradient.and {
+  #sectionGetStarted .wavyGradient.and {
     left: 14.25rem;
     top: -1rem;
   }
 }
 
 @media (max-width: 768px) {
-  #get_started-section .details {
+  #sectionGetStarted .details {
     margin-top: 3rem;
   }
 
-  #get_started-section .bg-panel {
+  #sectionGetStarted .bgPanel {
     padding-top: 3rem;
     padding-bottom: 2rem;
   }
 
-  #get_started-section .plain-panel {
+  #sectionGetStarted .plainPanel {
     margin-top: 4rem;
     margin-bottom: 6rem;
   }
@@ -387,36 +387,36 @@ a {
 /* End Get Started - Section */
 
 /* What We Do - Section */
-#what_we_do-section .wavy-gradient {
+#sectionWhatWeDo .wavyGradient {
   top: -1rem;
   left: 23.5rem;
 }
 
 
-#what_we_do-section .desc {
+#sectionWhatWeDo .desc {
   max-width: 36ch;
   height: 3.5rem;
 }
 
 @media (max-width: 992px) {
-  #what_we_do-section .wavy-gradient {
+  #sectionWhatWeDo .wavyGradient {
     left: 0;
   }
 }
 
 @media (max-width: 768px) {
-  #what_we_do-section .desc {
+  #sectionWhatWeDo .desc {
     height: 4.75rem;
   }
 }
 
-#what_we_do-section .carousel-control {
+#sectionWhatWeDo .carousel-control {
   width: calc(3.7rem * 2);
   height: calc(3.7rem);
 }
 
-#what_we_do-section .carousel-control-prev,
-#what_we_do-section .carousel-control-next {
+#sectionWhatWeDo .carousel-control-prev,
+#sectionWhatWeDo .carousel-control-next {
   border: var(--border);
   width: 3.7rem;
   height: 3.7rem;
@@ -426,11 +426,11 @@ a {
   opacity: 1;
 }
 
-#what_we_do-section .carousel-indicators {
+#sectionWhatWeDo .carousel-indicators {
   bottom: -4rem;
 }
 
-#what_we_do-section .carousel-indicators button {
+#sectionWhatWeDo .carousel-indicators button {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -438,7 +438,7 @@ a {
   background-color: var(--text-color)
 }
 
-#what_we_do-section .carousel-indicators button.active {
+#sectionWhatWeDo .carousel-indicators button.active {
   background-color: #B877FF;
 }
 
