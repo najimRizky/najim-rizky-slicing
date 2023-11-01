@@ -444,24 +444,34 @@ a {
 
 /* End What We Do - Section */
 
-/* Header - Navbar */
-header {
+/* Navbar */
+header,
+footer {
   padding: 3rem 0;
   z-index: 100;
   transition: background-color 0.3s ease-in-out;
 }
 
-header:has(.navbar-toggler[aria-expanded="true"]) {
-  background-color: var(--body-bg);
+body:has(header .navbar-toggler[aria-expanded="true"]),
+body:has(footer .navbar-toggler[aria-expanded="true"]) {
+  overflow: hidden;
 }
 
-header .navbar {
+header:has(.navbar-toggler[aria-expanded="true"]),
+footer:has(.navbar-toggler[aria-expanded="true"]) {
+  background-color: var(--body-bg);
+  position: fixed !important;
+}
+
+header .navbar,
+footer .navbar {
   border-left: var(--border);
   border-bottom: var(--border);
   padding: 0;
 }
 
-header .navbar-brand {
+header .navbar-brand,
+footer .navbar-brand {
   border-top: var(--border);
   border-right: var(--border);
 }
@@ -475,37 +485,67 @@ header .navbar-brand {
     border-top: var(--border);
     border-right: var(--border);
   }
+
+  footer .navbar-brand {
+    border-bottom: var(--border);
+    border-top: none;
+  }
+
+  footer .navbar {
+    border-top: var(--border);
+  }
+
+  footer .navbar-toggler.menu {
+    border-right: var(--border) !important;
+    text-align: center;
+  }
+
+  footer .action {
+    border-right: var(--border);
+  }
 }
 
-header .navbar-brand .title {
+header .navbar-brand .title,
+footer .navbar-brand .title {
   font-size: 1rem;
 }
 
-header .navbar-brand .slogan {
+header .navbar-brand .slogan,
+footer .navbar-brand .slogan {
   font-size: 0.625rem;
   line-height: 1.2;
 }
 
-header .nav-item {
+header .nav-item,
+footer .nav-item {
   border-right: var(--border);
   border-top: var(--border);
   flex: 1;
   text-transform: uppercase;
   white-space: nowrap;
-  ;
 }
 
-header .nav-link {
+header .nav-link,
+footer .nav-link {
   font-weight: 500;
   font-family: var(--inter);
   font-size: 0.75rem;
 }
 
-header .navbar-toggler {
+header .navbar-toggler,
+footer .navbar-toggler {
   font-family: var(--inter);
   color: white !important;
 }
 
-header .navbar-toggler:focus {
+header .navbar-toggler:focus,
+footer .navbar-toggler:focus  {
   box-shadow: none !important;
 }
+
+.footer {
+  margin-top: 6rem;
+  padding-bottom: 12rem;
+}
+
+/* End Navbar */
