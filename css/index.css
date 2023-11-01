@@ -112,6 +112,14 @@ a {
   color: inherit;
 }
 
+.pt-4_5 {
+  padding-top: 2.25rem;
+}
+
+.mt-4_5 {
+  margin-top: 2.25rem;
+}
+
 /* Hero - Section */
 #hero-section {
   background: url('./../images/bg_section-hero.jpg') no-repeat center center;
@@ -176,6 +184,10 @@ a {
 /*  End Hero - Section */
 
 /* About Us - Section */
+#about_us-section .sphere {
+  background: #202020;
+}
+
 #about_us-section .card-item {
   min-height: 18.5rem;
 }
